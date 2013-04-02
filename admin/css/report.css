@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+div.filter{
+	float:left;
+	margin:10px 10px 5px 10px;
+}
+div#price{
+	float:left;
+}
+div.clear {
+	clear:both;
+}
+div#list {
+	margin-top:12px;
+	line-height: 16px;
+    margin: 10px 0px 10px 10px;
+}
+.buttonDiv {
+	margin-left:10px;
+}
+#report th{
+	height: 50px;
+    text-align: left;
+}
+#report td {
+    border: 1px solid #D2D2D2;
+    padding: 10px 0 10px 10px;
+	color:#000;
+}
+
+
+ 

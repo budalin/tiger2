@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<country name="country_name" label="Country Name">
+	<option>Japan</option>
+	<option>US</option>
+	<option>China</option>
+	<option>India</option>
+</country>

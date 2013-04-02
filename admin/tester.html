@@ -1,0 +1,1021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>999 Tiger Administration</title>
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="default" />
+<link rel="shortcut icon" type="image/x-icon" href="images/shared/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/StyleSheet.css"/>
+<link rel="stylesheet" type="text/css" href="css/pagination.css"/>
+ <link rel="stylesheet" type="text/css" href="js/style.css"/>
+<!--[if IE]>
+<link rel="stylesheet" media="all" type="text/css" href="css/pro_dropline_ie.css" />
+<![endif]-->
+
+<!--  jquery core -->
+<script src="js/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+ 
+<!--  checkbox styling script -->
+<script src="js/jquery/ui.core.js" type="text/javascript"></script>
+<script src="js/jquery/ui.checkbox.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.bind.js" type="text/javascript"></script>
+<script src="js/validate.js" type="text/javascript"></script>
+<script src="js/calendar.js" type="text/javascript"></script>
+<script src="js/javascript.js" type="text/javascript"></script>
+<script src="js/lang/calendar-en.js" type="text/javascript"></script>
+<script src="js/jquery.tablesorter.js" type="text/javascript" ></script> 
+	
+<script type="text/javascript">
+$(function(){
+	$('input').checkBox();
+	$('#toggle-all').click(function(){
+ 	$('#toggle-all').toggleClass('toggle-checked');
+	$('#mainform input[type=checkbox]').checkBox('toggle');
+	return false;
+	});
+});
+</script>  
+
+
+<![if !IE 7]>
+
+<!--  styled select box script version 1 -->
+<script src="js/jquery/jquery.selectbox-0.5.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.styledselect').selectbox({ inputClass: "selectbox_styled" });
+});
+</script>
+ 
+
+<![endif]>
+
+
+<!--  styled select box script version 2 --> 
+<script src="js/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.styledselect_form_1').selectbox({ inputClass: "styledselect_form_1" });
+	$('.styledselect_form_2').selectbox({ inputClass: "styledselect_form_2" });
+});
+</script>
+
+<!--  styled select box script version 3 --> 
+<script src="js/jquery/jquery.selectbox-0.5_style_2.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.styledselect_pages').selectbox({ inputClass: "styledselect_pages" });
+});
+</script>
+
+<!--  styled file upload script --> 
+<script src="js/jquery/jquery.filestyle.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+$(function() {
+	$("input.file_1").filestyle({ 
+	image: "images/forms/upload_file.gif",
+	imageheight : 29,
+	imagewidth : 78,
+	width : 300
+	});
+});
+</script>
+
+<!-- Custom jquery scripts -->
+<script src="js/jquery/custom_jquery.js" type="text/javascript"></script>
+ 
+<!-- Tooltips -->
+<script src="js/jquery/jquery.tooltip.js" type="text/javascript"></script>
+<script src="js/jquery/jquery.dimensions.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	$('a.info-tooltip ').tooltip({
+		track: true,
+		delay: 0,
+		fixPNG: true, 
+		showURL: false,
+		showBody: " - ",
+		top: -35,
+		left: 5
+	});
+});
+</script> 
+
+<!-- MUST BE THE LAST SCRIPT IN <HEAD></HEAD></HEAD> png fix -->
+<script src="js/jquery/jquery.pngFix.pack.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(document).pngFix( );
+});
+</script>
+</head>
+<body> 
+<!-- Start: page-top-outer -->
+<div id="page-top-outer">    
+
+<!-- Start: page-top -->
+<div id="page-top">
+
+	<!-- start logo -->
+	<div id="logo">
+	<a href=""><img src="images/shared/logo.png" width="156" height="40" alt="" /></a>	</div>
+</div>
+<!-- End: page-top -->
+
+</div>
+<!-- End: page-top-outer -->
+	
+<div class="clear">&nbsp;</div>
+ 
+<!--  start nav-outer-repeat................................................................................................. START -->
+<div class="nav-outer-repeat"> 
+<!--  start nav-outer -->
+<div class="nav-outer"> 
+
+		<!-- start nav-right -->
+		<div id="nav-right">
+		
+			<div class="nav-divider">&nbsp;</div>
+			<div class="showhide-account"><img src="images/shared/nav/nav_myaccount.gif" width="93" height="14" alt="" /></div>
+			<div class="nav-divider">&nbsp;</div>
+			<a href="" id="logout"><img src="images/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
+			<div class="clear">&nbsp;</div>	
+		</div>
+	<!-- end nav-right -->
+
+	<!--  start nav -->
+		<div class="nav">
+		<div class="table">
+		
+		<ul class="select"><li><a href="home.php"><b>Home</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>
+		                    
+		<ul class="current"><li><a href="list_company_name.php"><b>Car Company Information</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<div class="select_sub show">
+			<ul class="sub">
+				<li><a href="add_company_name.php">Add Car Company Name</a></li>				
+			</ul>
+		</div>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>
+		
+		<ul class="select"><li><a href="list_brand_info.php"><b>Car Brand Information</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<div class="select_sub">
+			<ul class="sub">
+				<li><a href="add_brand_info.php">Add Car Brand Type</a></li>
+			</ul>
+		</div>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>
+		
+		<ul class="select"><li><a href="list_info_car.php"><b>Car Information</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		<!--[if lte IE 6]><table><tr><td><![endif]-->
+		<div class="select_sub">
+			<ul class="sub">
+				<li><a href="add_info_car.php">Add Car Information</a></li>
+			</ul>
+		</div>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+		</ul>
+		
+		<div class="nav-divider">&nbsp;</div>
+		
+		<ul class="select"><li><a href="report.php"><b>Car Report</b><!--[if IE 7]><!--></a><!--<![endif]-->
+		</li>
+		</ul>
+		
+		<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		</div>
+	<!--  start nav -->
+	
+
+</div>
+<div class="clear"></div>
+<!--  start nav-outer -->
+</div>
+<!--  start nav-outer-repeat................................................... END -->
+ 
+ <div class="clear"></div><script>
+//sorting for list_info_car.php
+$(document).ready(function() 
+    { 
+       
+		$("#product-table").delay(1000).tablesorter({
+		sortList: [[0,0], [1,0]],
+		headers: { 
+            // assign the secound column (we start counting zero) 
+            0: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            }, 
+			1: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            },
+			2: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            },   
+			
+			9: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            }, 
+			
+			10: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            }        
+           
+            
+        } }); 		
+    } 
+);
+
+</script>
+<div id="content-outer">
+<!-- start content -->
+<div id="content">
+	
+<!--  start page-heading -->
+	<div id="page-heading">
+			<h1 class="infocar">Information Car Listing</h1>
+		
+	</div>
+	<!-- end page-heading -->
+	<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
+	<tr>
+		<th rowspan="3" class="sized"><img src="images/shared/side_shadowleft.jpg" width="20" height="300" alt="" /></th>
+		<th class="topleft"></th>
+		<td id="tbl-border-top">&nbsp;</td>
+		<th class="topright"></th>
+		<th rowspan="3" class="sized"><img src="images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+	</tr>
+	<tr>
+		<td id="tbl-border-left"></td>
+	<td class="topmargin">
+		
+		<!--  start content-table-inner .........................START -->
+		<div id="content-table-inner">			 
+				<!--  start product-table ....................... -->
+			<form id="listform" action="list_info_car.php" method="POST" name="listform">
+				<table border="0" width="100%">
+					<tr>
+						<td class="cellpadding"><input type="text" name="keyword" value="">
+				<input type="button" name="search" value="Search" onclick="document.listform.submit();"></td>
+					<td class="cellpadding">
+					
+				<!--<input type="text" name="keyword" value="">
+				<input type="button" name="search" value="Search" onclick="document.mainform.submit();">-->
+
+					</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							
+							<table border="0" width="100%" cellpadding="0" cellspacing="0" id="product-table" class="tablesorter">
+							<thead>
+							<tr>
+							
+								<th class="table-header-check"># </th>
+								<th class="table-header-repeat line-left headerSortUp">Image Gallery</th>
+								<th class="table-header-repeat line-left minwidth-1">Image</th>
+								<th class="table-header-repeat line-left minwidth-1">Brand&nbsp;Type	</th>
+								<th class="table-header-repeat line-left minwidth-1">VIN</th>
+								<th class="table-header-repeat line-left">Produce&nbsp;Year</th>
+								<th class="table-header-repeat line-left">Price</th>
+								<th class="table-header-repeat line-left">Selling&nbsp;Status</th>
+								<!--<th class="table-header-options line-left">Usage Status</th>-->
+								<th class="table-header-repeat line-left">Registration&nbsp;Date</th>
+								<th class="table-header-repeat line-left">Status</th>
+								<th class="table-header-options line-left" style="width:150px;">Options</th>
+							</tr>
+							</thead>
+							<tbody> 
+														<tr>
+							
+								<td>1</td>								
+								<td>
+																<a href="#" name="editgallery" class="pop">Eidt Gallery</a>	
+															
+								
+								</td>
+								<td></td>
+								<td>BELTA G</td>
+								<td>M-345564</td>
+								<td>2007</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>29-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=8"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=8"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=8" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>2</td>								
+								<td>
+																<a href="#" name="editgallery" class="pop">Eidt Gallery</a>	
+															
+								
+								</td>
+								<td></td>
+								<td>BELTA XL</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>29-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=9"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=9"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=9" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>3</td>								
+								<td>
+																<a href="#" name="editgallery" class="pop">Eidt Gallery</a>	
+															
+								
+								</td>
+								<td>hrtuy</td>
+								<td>Mark 2 Gold Fish</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=10"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=10"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=10" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>4</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>CORONA</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=11"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=11"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=11" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>5</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BMW x6</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=12"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=12"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=12" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>6</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BMW 3</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=13"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=13"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=13" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>7</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Honda Fit</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=14"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=14"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=14" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>8</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Honda Civic</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=15"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=15"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=15" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>9</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Hyundai Sonata GLS</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=16"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=16"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=16" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>10</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Hyndai Express</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=17"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=17"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=17" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>11</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BELTA G</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=18"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=18"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=18" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>12</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BELTA XL</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=19"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=19"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=19" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>13</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Mark 2 Gold Fish</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=20"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=20"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=20" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>14</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Mark 2 Gold Fish</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=21"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=21"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=21" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>15</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BELTA XL</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=22"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=22"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=22" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>16</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BMW x6</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=23"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=23"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=23" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>17</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>BMW 3</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=24"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=24"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=24" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>18</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Honda Civic</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=25"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=25"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=25" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>19</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Hyndai Express</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=26"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=26"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=26" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                            							<tr>
+							
+								<td>20</td>								
+								<td>
+																<a href="#" name="creategallery" class="pop">Create Gallery</a>
+														
+								
+								</td>
+								<td></td>
+								<td>Hyundai Sonata GLS</td>
+								<td>M-345564</td>
+								<td>2006</td>
+								<td>1,000,000.00&nbsp;$</td>
+								<td>Sell</td>
+								<!--<td>New</td>-->
+								<td>22-03-2013</td>								
+								<td align="center">
+						<a class="icon-3 info-tooltip" 
+						href="?status=active&amp;id=27"></a>
+					</td>
+								<td class="options-width">
+								<a class="icon-1 info-tooltip" href="edit_info_car.php?status=edit&amp;id=27"></a>
+								<a class="icon-2 info-tooltip" title="Delete" href="?status=delete&amp;id=27" onclick="return confirm ('Are you sure you want to delete?');"></a>
+								
+								</td>				
+							
+							 </tr>
+                                
+                                
+							</tbody>   			
+							</table>					
+						 </td>					
+					  </tr>
+					
+				 </table>                                  
+                       <div id="pagination"><span class="disabled">previous</span><span class="current">1</span><a href="list_info_car.php? p_a_g_e=2">2</a><a href="list_info_car.php? p_a_g_e=2">next</a></div>
+                                    
+                            
+				
+				<!--  end product-table................................... --> 
+				</form>
+			</div>
+			<!--  end content-table  -->
+		
+				
+		<div class="clear"></div>		 
+
+</td>
+	<td id="tbl-border-right"></td>
+	</tr>
+	<tr>
+		<th class="sized bottomleft"></th>
+		<td id="tbl-border-bottom">&nbsp;</td>
+		<th class="sized bottomright"></th>
+	</tr>
+	</table>
+	<div class="clear">&nbsp;</div>
+
+		<div style="width:1px;height:1px;overflow:hidden">
+		<img src="js/asc.gif" class="hide"/>
+		<img src="js/desc.gif" class="hide"/>
+		<img src="js/bg.gif" class="hide"/></div>
+
+
+<div class="clear">&nbsp;</div>
+    
+<!-- start footer -->         
+<div id="footer">
+	<!--  start footer-left -->
+	<div id="footer-left">
+	&copy; Copyright Internet Dreams Ltd. <a href="">www.netdreams.co.uk</a>. All rights reserved.</div>
+	<!--  end footer-left -->
+	<div class="clear">&nbsp;</div>
+</div>
+<!-- end footer -->
+testing
+ <script type="text/javascript">
+	$(document).ready(function() {
+		$(".pop").click(function() {
+			$("#pop-up").fadeIn();
+		});
+		
+		$("#close").click(function() {
+			$("#pop-up").fadeOut();
+		});
+		
+		$('#img img').click(function() {
+			$(this)
+			    .closest('div')
+			        .find('input:checkbox').attr('checked', function(idx, oldAttr) {
+			            return !oldAttr;
+			        });
+			/*var checkbox = $(this).siblings();
+			if (checkbox.is("[checked]")){
+				checkbox.attr("checked", undefined);
+			}
+			else {
+			checkbox.attr("checked", "checked");
+			//$(this).hide();
+			}*/
+		});
+	});
+</script>
+<style type="text/css">
+	body {
+		/*background: #eee;*/
+		background: #fff;
+	}
+	#pop-up {
+		width: 600px;
+		height: auto;
+		margin: 0 auto;
+		border-radius: 10px;
+		background: #fff;
+		/*display: none;*/
+		position: absolute;
+		box-shadow: 0 0 50px #aaa;
+		padding: 30px;
+	}
+	#img {
+		float: left;
+		margin: 0 15px 15px 0;
+		width: 130px;
+		height: 130px;
+		display: block;
+	}
+	#close {
+		width: 33px;
+		height: 33px;
+		display: block;
+		background: url(images/close.png) no-repeat;
+		margin: -44px 0 0 -42px;
+	}
+	#cbox {
+		margin: -14px 0 0 0;
+	}
+	.button {
+		width: 100%;
+		height: 50px;
+		padding: 10px 0;
+		display: block;
+		float: right;
+		text-align: right;
+	}
+	.delete {
+		margin: 0 0 0 134px;
+	}
+	.clear {
+		clear: both;
+	}
+</style>
+
+
+	<a href="javascript:void(0);" class="pop">CLICK HERE</a>
+	<div id="pop-up"><!-- pop up div starts -->
+		<a href="javascript:void(0);" id="close"></a>
+		<div class="button"><input type="file" value="Select Photo"/><input type="button" value="Upload"/><input class="delete" type="button" value="Delete Selected Picture(s)" /></div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox" checked="uncheck"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div id="img">
+			<img src="images/2013-Ford-Fusion-Energi-plug-in-hybrid-sedan-green-car-of-the-year.jpg" alt="" />
+			<input type="checkbox" id="cbox"/>
+		</div>
+		<div class="clear"></div>
+	</div><!-- end of pop up div -->
+
+ testing 
+</body>
+</html>

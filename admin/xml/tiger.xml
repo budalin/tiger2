@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<tiger>
+<!--  Brand Type Select Box -->
+	<brandType label="Brand Type" status="yes" require="yes" name="brandtype">
+		<option>Select Brand Type</option>
+	</brandType>
+	
+<!-- VIN Text Box -->
+	<VIN label="VIN" status="yes" require="yes" name="VIN">
+	</VIN>
+
+
+
+
+<!-- Produce Year Text Box -->	
+	<produceYear label="Produce Year/ Model" status="yes" require="yes" name="produceyear"></produceYear>
+	
+<!-- Price Text Box -->
+	<price label="Price" status="yes" require="yes" name="price"></price>
+
+<!-- Currency Unit -->
+	<currency status="yes" require="yes" name="curunit">		
+		<option>$</option>
+		<option>Kyats</option>
+	</currency>
+	
+<!-- No.of Door Text Box -->
+	<door label="No.Of Door" status="yes" require="no" name="door"></door>
+	
+<!-- No.of Seat Text Box -->
+	<seat label="No.Of Seat" status="yes" require="no" name="seat"></seat>
+	
+<!-- Exterior Color Text Box -->
+	<extcolor label="Exterior Color" status="yes" require="no" name="extcolor"></extcolor>
+	
+<!-- Interior Color Text Box -->
+	<intercolor label="Interior Color" status="yes" require="no" name="intercolor"></intercolor>
+	
+<!-- Fuel Type Select Box -->
+	<fuelType label="Fuel Type" status="yes" require="no" name="fueltype">		
+		<option>Petrol</option>
+		<option>Diesel</option>
+		<option>Biodiesel</option>
+		<option>Autogas</option>
+		<option>Ethanol Blend</option>
+		<option>Hybrid</option>
+	</fuelType>
+	
+<!-- Fuel Tank Text Box -->
+	<fuelTank label="Fuel Tank" status="yes" require="no" name="fueltank"></fuelTank>	
+	
+<!-- Transmission Text Box -->
+	<transimission label="Transmission" status="yes" require="no" name="transmission">		
+		<option>Manual transmission</option>
+		<option>Automatic transmission</option>
+		<option>CVT(Continuous variable transmission</option>
+		<option>Semi automatic transmission</option>
+		<option>TipTronic® gearbox</option>
+		<option>DSG (Direct shift gearbox)</option>
+	</transimission>
+	
+<!-- Used Mile Text Box -->
+	<usedMile label="Used Mile" status="yes" require="no" name="usedmile"></usedMile>
+	
+<!-- Engine Power Text Box -->	
+	<enginepower label="Engine Power" status="yes" require="no" name="enginepower"></enginepower>
+	
+<!-- Selling Status Select Box -->	
+	<selling status="yes" label="Selling Status" name="selling" require="yes">		
+		<option>Sell</option>
+		<option>Sold Out</option>
+		<option>Pending</option>
+	</selling>
+
+<!-- Usage Status Select Box -->
+	<usage label="Usage Status" status="yes" require="yes" name="usage">		
+		<option>New</option>
+		<option>Used</option>
+		<option>Other</option>	
+	</usage>
+	
+<!-- Vehicle Type Text Box -->
+	<vehicleType label="Vehile Type" status="yes" require="no" name="vehicletype">		
+		<option>Coupe</option>
+		<option>Sedan</option>
+		<option>Sports Car </option>
+		<option>Stationwagon</option>	
+		<option>Truck</option>
+		<option>SUV</option>
+		<option>Convertible</option>
+		<option>Luxury Car</option>
+	</vehicleType>
+
+
+
+<!-- Streeting Select Box -->
+	<steering label="Streeting" status="yes" require="no" name="streeting">		
+		<option>Rack and Pinion Steering</option>
+		<option>Worm and Sector steering gear</option>
+		<option>Worm and Roller steering gear</option>
+		<option>Cam and Lever steering gear</option>
+	</steering>
+
+<!-- Registration Date -->
+	<regDate label="Registration Date" status="yes" require="no" name="testdate" id="testdate"></regDate>
+
+<!-- Features Text Box -->
+	<features label="Features" status="yes" require="no" name="features"></features>
+
+<!-- Description Select Box -->
+	<description label="Description" status="yes" require="no" name="description"></description>
+	
+	<!-- Country Name Select Box -->
+	<country label="Country Name" status="yes" require="yes" name="country_name">
+		<option>Japan</option>
+		<option>US</option>
+		<option>China</option>
+		<option>India</option>
+	</country>	
+	
+	<!-- company Text Box -->
+	<company label="Company Name" status="yes" require="yes" name="companyname">
+	</company>
+
+	<!-- Brand Text Box -->
+	<brand label="Brand Type" status="yes" require="no" name="brandtype"></brand>
+	
+</tiger>
+

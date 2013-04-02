@@ -1,0 +1,42 @@
+div#pagination {
+	width: 800px;
+	padding: 3px;
+	margin: 0px 250px 0px 250px;
+    margin: 0 auto;
+
+}
+
+div#pagination a {
+	padding: 4px 7px 4px 7px;
+	margin: 2px;
+	border: 1px solid #0892DB;
+	text-decoration: none; /* no underline */
+	color: #0892DB;
+	background:#fdfdfd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+}
+div#pagination a:hover, div#pagination a:active {
+	border: 1px solid #b2acac;
+	box-shadow: 2px #0892DB;
+	color: #000;
+}
+div#pagination span.current {
+	padding: 4px 7px 4px 7px;
+	margin: 2px;
+		border: 1px solid #0892DB;
+		font-weight: bold;
+		background-color: #0892DB;
+		color: #fff;
+		border-radius:4px;
+		-moz-border-radius:4px;
+	}
+	div#pagination span.disabled {
+		padding: 4px 7px 4px 7px;
+		margin: 2px;
+		border: 1px solid #0892DB;
+		color:#9c9c9c;
+		background:#f1f1f1;
+		border-radius:4px;
+		-moz-border-radius:4px;
+	}
